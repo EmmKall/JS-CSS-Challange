@@ -83,6 +83,14 @@ html{
 }
 
 @media (min-width: 768px){
+
+    .header{
+        background: url('../images/desktop/image-header.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
     .menu-lista{
         background: none;
         border: none;
@@ -101,7 +109,10 @@ html{
         color: #000000;
         border-radius: 1rem;
     }
+
 }
+
+/* Section */
 
 .main-content{
     display: grid;
@@ -134,8 +145,13 @@ html{
     border-bottom: 0.2rem solid #FFFFFF;
 }
 
+
 .btncard1 a:hover{
     border-bottom: 0.2rem solid hsl(51, 100%, 49%);
+}
+
+.btncard2 a:hover{
+    border-bottom: 0.2rem solid hsl(7, 99%, 70%);
 }
 
 .card-img1{
@@ -154,6 +170,68 @@ html{
     background-size: cover;
 }
 
-.card-content{
+.card-content{}
+
+@media (min-width: 768px){
+    .main-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-img1{
+        grid-column: 2/3;
+        grid-row: 1/1;
+    }
+
+    .card-img2{
+        grid-column: 1/2;
+        grid-row: 2/2;
+    }
+}
+
+.second1{
+    background: url('../images/mobile/image-graphic-design.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.second2{
+    background: url('../images/mobile/image-photography.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-second{
+    padding: 2rem;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.card-second h4{
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: 1rem auto;
+}
+
+.card-second p{
+    text-align: center;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .second{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column: 1rem;
+    }
+
+    .card-second{
+        padding-top: 30%;
+    }
 
 }
