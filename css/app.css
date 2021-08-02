@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+/* font-family: 'Barlow', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+/* font-family: 'Fraunces', serif; */
+
 *,*::before,*::after{
     margin: 0;
     padding: 0;
@@ -6,6 +11,17 @@
 
 html{
     box-sizing: border-box;
+    font-family: 'Fraunces', serif;
+}
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem auto;
+}
+
+img{
+    width: 100%;
 }
 
 .attribution { font-size: 11px; text-align: center; }
@@ -234,4 +250,63 @@ html{
         padding-top: 30%;
     }
 
+}
+
+/* Section  */
+
+.testiminial{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.content-testimonial{
+    text-align: center;
+}
+
+.content-testimonial img{
+    border-radius: 50%;
+    width: 20%;
+}
+
+.content-testimonial h4{
+    font-family: 'Barlow', sans-serif;
+    font-weight: normal;
+    margin: 2rem auto;
+}
+
+.content-testimonial p{
+    font-family: Barlow, sans-serif;
+    font-weight: bolder;
+    font-weight: 1rem;
+}
+
+.content-testimonial span{
+    font-family: Barlow, sans-serif;
+    color: #8b8b8b;
+    font-size: 0.8rem;
+    margin: 0.2rem auto;
+}
+
+@media (min-width: 768px){
+    .testiminial{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.images{
+    display: grid;
+    width: 100%;
+    gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.image{
+
+    width: 100%;
+}
+
+@media (min-width: 768px){
+    .images{
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
