@@ -24,6 +24,10 @@ img{
     width: 100%;
 }
 
+li{
+    list-style: none;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
@@ -259,8 +263,13 @@ img{
     grid-template-columns: repeat(1, 1fr);
 }
 
+.title-testimonial{
+    color: #8b8b8b;
+}
+
 .content-testimonial{
     text-align: center;
+    margin: 2rem auto;
 }
 
 .content-testimonial img{
@@ -309,4 +318,62 @@ img{
     .images{
         grid-template-columns: repeat(4, 1fr);
     }
+}
+
+.footer{
+    margin-top: -1rem;
+    background: hsl(168, 70%, 67%);
+    padding: 4rem 2rem;
+    color: hsl(168, 34%, 41%);
+    text-align: center;
+}
+
+.footer h4{
+    font-family: Barlow, sans-serif;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.footer-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+
+.footer-menu li{
+    margin: 2rem 1rem;
+}
+
+
+.attribution{ 
+    background: #000000;
+    padding: 1rem 0;
+    color: #FFFFFF;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+.attribution p{
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.attribution a:hover{
+    color: #c8d11b;
+}
+
+.footer-redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-redes i{
+    margin: 1rem;
 }
